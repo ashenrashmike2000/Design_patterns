@@ -1,6 +1,7 @@
 package adaptor;
 
 import adaptor.image.JpegImageViewer;
+import adaptor.image.PngImageViewer;
 
 public class MediaPlayerFactory {
 
@@ -15,7 +16,10 @@ public class MediaPlayerFactory {
             mediaPlayer = new MP4MediaPlayer();
         }
         if(file.endsWith(".jpeg")){
-            mediaPlayer = new JpegAdaptor(new JpegImageViewer());
+            mediaPlayer = new ImageAdaptor(new JpegImageViewer());
+        }
+        if(file.endsWith(".png")){
+            mediaPlayer = new ImageAdaptor(new PngImageViewer());
         }
 
         return mediaPlayer;
