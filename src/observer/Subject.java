@@ -15,7 +15,7 @@ public class Subject {
         this.observerList.remove(observer);
     }
 
-    public void notifyAllObservers(String event){
+    public void notifyAllObservers(MatchEvent event){
         for(Observer observer : observerList){
             observer.notifyMe(event);
         }
