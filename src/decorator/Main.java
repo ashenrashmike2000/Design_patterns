@@ -1,6 +1,5 @@
 package decorator;
 
-import java.net.CookieHandler;
 
 public class Main {
 
