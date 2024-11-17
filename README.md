@@ -1,0 +1,1 @@
+# This Repo represent a few design patterns we can use in programming.
